@@ -1,4 +1,11 @@
 .start {
   color: black;
-  border: blanchedalmond 1px solid;
+  border-radius: 35px;
+  background: black;
+  width: 15em;
+  height: 5em;
+  border: none;
+}
+.text {
+  color: white;
 }
