@@ -1,18 +1,17 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Button from "../components/button/Button";
+import StartButton from "../components/button/StartButton";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Momentum</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <Button primary label="Primary" />
-        <Button primary={false} label="Secondary" />
+        <StartButton />
       </main>
     </div>
   );
