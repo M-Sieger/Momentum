@@ -1,16 +1,19 @@
 import styles from "./StartButton.module.css";
 
-function StartButton() {
+export type StartButtonProps = {
+ label: string
+ handleClick: MouseEventHandler<HTMLButtonElement>
+}
+
+function StartButton({ label, handleClick }: StartButtonProps) {
   function handleClick(e: { preventDefault: () => void }) {
     e.preventDefault();
   }
 
   return (
-    <a href="#" onClick={handleClick}>
-      <button className={styles.start}>
-        <div className={styles.text}>Start</div>
+      <button className={styles.start} onClick={handleClick}>
+        <div className={styles.text}>{label}</div>
       </button>
-    </a>
   );
 }
 export default StartButton;
