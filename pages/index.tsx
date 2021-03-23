@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <StartButton />
+        <StartButton label="your label" handleClick={handleClick} />
       </main>
     </div>
   );
