@@ -1,0 +1,9 @@
+.link {
+  display: inline-block;
+  color: white;
+  border-radius: 35px;
+  background: black;
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  text-align: center;
+}
