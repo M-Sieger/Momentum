@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import StartButton from "../components/button/StartButton";
+import ButtonLink from "../components/button";
 
 export default function Home() {
   return (
@@ -11,11 +11,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <ButtonLink label="your label" handleClick={""} />
 
-        <StartButton label="your label" handleClick={handleClick} />
-
-        <StartButton />
-
+        <ButtonLink />
       </main>
     </div>
   );
