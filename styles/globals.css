@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "NewTegominRegular";
+  font-style: normal;
+  src: url("/Fonts/NewTegomin-Regular.ttf") format("truetype");
+}
+
+:root {
+  --HeaderFont: "NewTegominRegular", sans-serif;
+}
+
 html,
 body {
   padding: 0;
