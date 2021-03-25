@@ -1,0 +1,17 @@
+.matchday {
+  display: inline-block;
+  color: white;
+  border-radius: 35px;
+  background: rgb(129, 104, 104);
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  text-align: center;
+  border: white 10px solid;
+}
+
+.schalkematch {
+  height: 7em;
+}
+.bvbmatch {
+  height: 7em;
+}
