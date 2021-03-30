@@ -1,4 +1,10 @@
+### GET all Leagues
 GET http://localhost:3000/api/leagues
-###
+
+
+### GET all teams of Bundesliga 
 GET http://localhost:3000/api/teams
-###
+
+### GET teams by name 
+GET http://localhost:3000/api/teams?search=Augsburg 
+
