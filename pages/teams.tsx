@@ -15,8 +15,6 @@ export default function TeamListPage() {
   if (error) return <div>failed to load</div>;
   if (!teams) return <div className={styles.container}>loading</div>;
 
-  console.log({ teams });
-
   return (
     <div className={styles.container}>
       <Head>
