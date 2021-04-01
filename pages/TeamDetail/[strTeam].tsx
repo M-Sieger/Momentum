@@ -13,7 +13,7 @@ const TeamDeatilsPage = () => {
   if (!team)
     return (
       <div className={styles.container}>
-        <p>Lädt</p>
+        <p>Loadingspinner </p>
       </div>
     );
   return <div>{/* <TeamDetails teams={team} /> */}</div>;
