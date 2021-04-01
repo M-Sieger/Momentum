@@ -1,0 +1,30 @@
+import Head from "next/head";
+import React from "react";
+import useSWR from "swr";
+import TeamList from "../components/TeamList/teamList";
+import type { Team } from "../utils/TeamTypes";
+import styles from "../styles/Home.module.css";
+
+export type TeamListPageProps = { teams: Team };
+
+export const fetcher = (url) => fetch(url).then((res) => res.json());
+
+export default function TeamListPage() {
+  const { data: teams, error } = useSWR("/api/teams", fetcher);
+
+  if (error) return <div>failed to load</div>;
+  if (!teams) return <div className={styles.container}>loading</div>;
+
+  console.log({ teams });
+
+  return (
+    <div className={styles.container}>
+      <Head>
+        <title>Momentum</title>
+      </Head>
+      <main>
+        <TeamList teams={teams} />
+      </main>
+    </div>
+  );
+}
