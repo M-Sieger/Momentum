@@ -4,6 +4,7 @@ import useSWR from "swr";
 import TeamList from "../components/TeamList/teamList";
 import type { Team } from "../utils/TeamTypes";
 import styles from "../styles/Home.module.css";
+import LoadingSpinner from "../components/LoadingSpinner/loadingSpinner ";
 
 export type TeamListPageProps = { teams: Team };
 
@@ -13,7 +14,12 @@ export default function TeamListPage() {
   const { data: teams, error } = useSWR("/api/teams", fetcher);
 
   if (error) return <div>failed to load</div>;
-  if (!teams) return <div className={styles.container}>loading</div>;
+  if (!teams)
+    return (
+      <div className={styles.container}>
+        <LoadingSpinner />
+      </div>
+    );
 
   return (
     <div className={styles.container}>
