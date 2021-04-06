@@ -1,10 +1,6 @@
 import useSWR from "swr";
 import { useRouter } from "next/router";
 import styles from "../../styles/home.module.css";
- TeamDetailsLink
-import React from "react";
-import LoadingSpinner from "../../components/LoadingSpinner/loadingSpinner ";
-import TeamDetails from "../../components/TeamDetails/teamDetails";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
@@ -17,14 +13,10 @@ const TeamDeatilsPage = () => {
   if (!team)
     return (
       <div className={styles.container}>
- TeamDetailsLink
-        <span>
-          <LoadingSpinner />
-        </span>
+        <p>Lädt</p>
       </div>
     );
-  return <div>{<TeamDetails teams={team} />}</div>;
-
+  return <div>{/* <TeamDetails teams={team} /> */}</div>;
 };
 
 export default TeamDeatilsPage;
