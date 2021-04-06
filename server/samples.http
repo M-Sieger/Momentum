@@ -9,3 +9,6 @@ GET http://localhost:3000/api/teams
 GET http://localhost:3000/api/teams?search=Augsburg 
 
 
+### GET team details 
+
+GET https://www.thesportsdb.com/api/v1/json/1/lookuptable.php?l=4331&s=2020-2021
