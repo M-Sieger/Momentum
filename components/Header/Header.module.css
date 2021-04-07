@@ -8,4 +8,5 @@
   padding: 0.5em 1em;
   font-family: var(--HeaderFont);
   border: none;
+  position: sticky;
 }

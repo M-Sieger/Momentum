@@ -1,20 +1,33 @@
-.teamName {
-  color: black;
-  text-align: center;
-  margin: 2em 0 2em 0;
-}
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 
-.listContainer {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  margin-bottom: 5em;
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
 }
 
 .teamListBadge {
   max-width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  transition: all 500ms ease;
+  margin: 5em 0 5em 0;
 }
-
+.teamListBadge:hover {
+  animation: bounce 1s;
+}
 .listHeader {
   margin-bottom: 10px;
 }

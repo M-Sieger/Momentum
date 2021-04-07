@@ -5,6 +5,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 111, 3, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
 .main {

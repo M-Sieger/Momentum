@@ -1,11 +1,35 @@
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
 .link {
   display: inline-block;
   color: white;
   border-radius: 35px;
   background: black;
   font-size: 1.2em;
-  padding: 0.5em 1em;
+  padding: 3.5em 1em;
   text-align: center;
   border: white 5px solid;
   background-color: transparent;
+  margin: 3.5em 3.5em;
+}
+.link:hover {
+  animation: bounce 1s;
 }
