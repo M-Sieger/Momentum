@@ -1,6 +1,6 @@
 import useSWR from "swr";
 import { useRouter } from "next/router";
-import styles from "../../styles/home.module.css";
+import styles from "../../styles/Home.module.css";
 import React from "react";
 import LoadingSpinner from "../../components/LoadingSpinner/loadingSpinner ";
 import TeamDetails from "../../components/TeamDetails/teamDetails";

@@ -7,7 +7,7 @@ export type TeamDetailsProps = {
 const TeamDetails = ({ teams }: TeamDetailsProps) => {
   return (
     <div>
-      <img src={teams.strTeamBadge} alt={"#"} />
+      <img src={teams.strTeamBadge.split("/tiny")[0]} alt={"#"} />
       <p>{teams.intRank}</p>
       <p>{teams.intPoints}</p>
       <p>{teams.intGoalsFor}</p>

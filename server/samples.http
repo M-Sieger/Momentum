@@ -6,7 +6,7 @@ GET http://localhost:3000/api/leagues
 GET http://localhost:3000/api/teams
 
 ### GET teams by name 
-GET http://localhost:3000/api/teams?search=Augsburg 
+GET http://localhost:3000/api/teams/Augsburg 
 
 
 ### GET team details 

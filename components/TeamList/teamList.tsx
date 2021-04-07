@@ -16,7 +16,7 @@ const TeamList = ({ teams }: TeamListProps) => {
       </span>
       <div className={styles.teamList}>
         {teams.map((team) => (
-          <Link href={`/teamDetails/${team.strTeam}`} key={team.strTeam}>
+          <Link href={`/TeamDetail/${team.strTeam}`} key={team.strTeam}>
             <div className={styles.listContainer} key={team.strTeam}>
               <img
                 className={styles.teamListBadge}
