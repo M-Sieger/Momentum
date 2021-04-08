@@ -2,11 +2,11 @@
   height: 50px;
   display: block;
   background-color: black;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
   color: white;
   text-align: center;
   font-size: 1.2em;
   padding: 0.5em 1em;
   font-family: var(--HeaderFont);
+  border: none;
+  position: sticky;
 }
