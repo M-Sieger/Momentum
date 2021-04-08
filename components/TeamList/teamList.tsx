@@ -9,6 +9,10 @@ import Header from "../Header/Header";
 import Header from "../Header/Header";
 
 
+import Header from "../Header/Header";
+
+
+
 
 
 export type TeamListProps = {
@@ -24,12 +28,18 @@ const TeamList = ({ teams }: TeamListProps) => {
 
       <div className={styles.teamList}>
         {teams.map((team) => (
+          <Link href={`/TeamDetail/${team.strTeam}`} key={team.strTeam}>
+
+
+      <div className={styles.teamList}>
+        {teams.map((team) => (
 
       <div>
         {teams.map((team) => (
 
 
           <Link href={`/teamDetails/${team.strTeam}`} key={team.strTeam}>
+
             <div className={styles.listContainer} key={team.strTeam}>
               <img
                 className={styles.teamListBadge}
@@ -43,6 +53,7 @@ const TeamList = ({ teams }: TeamListProps) => {
             <div className={styles.listContainer} key={team.id}>
               <img src={team.strTeamBadge} alt={team.strTeam} />
               <p className={styles.teamName}>{team.strTeam}</p>
+
 
 
             </div>

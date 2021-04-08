@@ -1,4 +1,7 @@
 
+
+
+
 @keyframes bounce {
   0%,
   20%,
@@ -18,6 +21,8 @@
     transform: translateY(-10px);
   }
 
+
+
 .teamName {
   color: black;
   text-align: center;
@@ -29,6 +34,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   margin-bottom: 5em;
+
 
 }
 
@@ -44,7 +50,9 @@
   animation: bounce 1s;
 }
 
+
 }
+
 
 
 .listHeader {
