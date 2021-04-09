@@ -1,15 +1,7 @@
 import useSWR from "swr";
 import { useRouter } from "next/router";
 
-
-
 import styles from "../../styles/Home.module.css";
-
-
-
- 
-
-
 
 import React from "react";
 import LoadingSpinner from "../../components/LoadingSpinner/loadingSpinner ";
@@ -26,26 +18,12 @@ const TeamDeatilsPage = () => {
   if (!team)
     return (
       <div className={styles.container}>
-
-
-
-
-
-
-
         <span>
           <LoadingSpinner />
         </span>
       </div>
     );
   return <div>{<TeamDetails teams={team} />}</div>;
-
-
-
-
-
-
-
 };
 
 export default TeamDeatilsPage;

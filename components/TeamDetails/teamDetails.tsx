@@ -1,4 +1,5 @@
 import { Team } from "../../utils/TeamTypes";
+import styles from "../../styles/teamDetails.module.css";
 
 export type TeamDetailsProps = {
   teams: Team;
@@ -6,26 +7,18 @@ export type TeamDetailsProps = {
 
 const TeamDetails = ({ teams }: TeamDetailsProps) => {
   return (
-    <div>
+    <div className={styles.detailsContainer}>
+      <img
+        className={styles.detailBadge}
+        src={teams.strTeamBadge.split("/tiny")[0]}
+        alt={"#"}
+      />
 
-      <img src={teams.strTeamBadge.split("/tiny")[0]} alt={"#"} />
-
-      <img src={teams.strTeamBadge} alt={"#"} />
-
-
-
-
-
-      <p>{teams.intRank}</p>
-      <p>{teams.intPoints}</p>
-      <p>{teams.intGoalsFor}</p>
-      <p>{teams.intGoalsAgainst}</p>
-
-
-
-
-
-
+      <p>Tabellenplatz: {teams.intRank}</p>
+      <p>Punkte: {teams.intPoints}</p>
+      <p>Tore: {teams.intGoalsFor}</p>
+      <p>Gegentore: {teams.intGoalsAgainst}</p>
+      <p>Momentum: {teams.strForm}</p>
     </div>
   );
 };

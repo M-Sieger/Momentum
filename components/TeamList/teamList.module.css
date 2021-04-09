@@ -1,7 +1,3 @@
-
-
-
-
 @keyframes bounce {
   0%,
   20%,
@@ -20,9 +16,7 @@
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
   }
-
-
-
+}
 .teamName {
   color: black;
   text-align: center;
@@ -34,13 +28,10 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   margin-bottom: 5em;
-
-
 }
 
 .teamListBadge {
   max-width: 100%;
-
   position: relative;
   box-sizing: border-box;
   transition: all 500ms ease;
@@ -49,11 +40,6 @@
 .teamListBadge:hover {
   animation: bounce 1s;
 }
-
-
-}
-
-
 
 .listHeader {
   margin-bottom: 10px;
