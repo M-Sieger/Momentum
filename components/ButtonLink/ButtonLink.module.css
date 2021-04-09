@@ -29,6 +29,7 @@
   border: white 5px solid;
   background-color: transparent;
   margin: 3.5em 3.5em;
+  cursor: pointer;
 }
 .link:hover {
   animation: bounce 1s;
