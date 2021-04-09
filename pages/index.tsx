@@ -6,7 +6,7 @@ import Logo from "../components/Logo/Logo";
 
 export default function SplashPage() {
   useEffect(() => {
-    setTimeout(() => router.push("/splashPage"), 3000);
+    setTimeout(() => router.push("/logInPage"), 3000);
   });
 
   return (
@@ -17,7 +17,7 @@ export default function SplashPage() {
       </Head>
 
       <main className={styles.main}>
-        <Logo src="/Logo_Bundesliga.svg.png" />
+        <Logo src="/bundesliga-1-logo-png-transparent.png" />
       </main>
     </div>
   );

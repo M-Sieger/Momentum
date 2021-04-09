@@ -1,0 +1,15 @@
+.link {
+  display: inline-block;
+  color: white;
+  border-radius: 5px;
+  background: black;
+  font-size: 1.2em;
+  padding: 1em 1.5em;
+  text-align: center;
+  border: white 1px solid;
+  margin: 3.5em 3.5em;
+  box-shadow: rgb(0, 0, 0);
+}
+.link:hover {
+  animation: ease-out;
+}
