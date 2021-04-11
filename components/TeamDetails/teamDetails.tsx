@@ -9,7 +9,7 @@ export type TeamDetailsProps = {
 
 const TeamDetails = ({ teams }: TeamDetailsProps) => {
   return (
-    <main>
+    <>
       <div className={styles.detailsContainer}>
         <ButtonLink href="/matchday">Spieltag</ButtonLink>
         <img
@@ -34,7 +34,7 @@ const TeamDetails = ({ teams }: TeamDetailsProps) => {
         </div>
         <div className={styles.spieltag}></div>
       </div>
-    </main>
+    </>
   );
 };
 export default TeamDetails;
