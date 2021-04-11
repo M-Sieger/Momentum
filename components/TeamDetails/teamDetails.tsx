@@ -13,12 +13,13 @@ const TeamDetails = ({ teams }: TeamDetailsProps) => {
         src={teams.strTeamBadge.split("/tiny")[0]}
         alt={"#"}
       />
-
-      <p>Tabellenplatz: {teams.intRank}</p>
-      <p>Punkte: {teams.intPoints}</p>
-      <p>Tore: {teams.intGoalsFor}</p>
-      <p>Gegentore: {teams.intGoalsAgainst}</p>
-      <p>Momentum: {teams.strForm}</p>
+      <ul>
+        <li>Tabellenplatz: {teams.intRank}</li>
+        <li>Punkte: {teams.intPoints}</li>
+        <li>Tore: {teams.intGoalsFor}</li>
+        <li>Gegentore: {teams.intGoalsAgainst}</li>
+        <li>Momentum: {teams.strForm}</li>
+      </ul>
     </div>
   );
 };
