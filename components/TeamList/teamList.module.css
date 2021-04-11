@@ -1,60 +1,36 @@
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-@keyframes bounce {
-  0%,
-  20%,
-  60%,
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-
-  40% {
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px);
-  }
-
-  80% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-}
-.teamName {
-  color: black;
-  text-align: center;
-  margin: 2em 0 2em 0;
-}
-
 .listContainer {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   margin-bottom: 5em;
-  animation-duration: 1s;
-  animation-name: slidein;
+  margin-left: 35px;
 }
 
 .teamListBadge {
-  max-width: 100%;
   position: relative;
   box-sizing: border-box;
   transition: all 500ms ease;
   margin: 5em 0 5em 0;
-}
-.teamListBadge:hover {
-  animation: bounce 1s;
+  width: 170px;
+  height: auto;
+  cursor: pointer;
+  animation: fadein 2s;
 }
 
 .listHeader {
   margin-bottom: 10px;
+  width: 100;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.choose {
+  color: white;
 }

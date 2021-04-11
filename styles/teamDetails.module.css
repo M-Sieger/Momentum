@@ -1,9 +1,68 @@
 .detailsContainer {
   display: grid;
+  min-height: 100vh;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-column-gap: 1px;
   grid-row-gap: 0;
   justify-items: center;
   align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 111, 3, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.detailBadge {
+  width: 180px;
+  height: auto;
+  animation: fadein 2s;
+}
+.infoList {
+  list-style: none;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  animation: fadein 2s;
+}
+.listDiv {
+  border: 1px solid white;
+  border-radius: 10px;
+  background: black;
+  padding-right: 2em;
+  margin-bottom: 15em;
+}
+
+.tabellenplatz {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+
+.goals {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+
+.goalsagainst {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+
+.momentum {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+
+.points {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

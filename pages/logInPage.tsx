@@ -13,9 +13,7 @@ export default function SplashPage() {
         <title>Startseite</title>
         <link rel="icon" href="/Logo_Bundesliga.svg.png" />
       </Head>
-      <header>
-        <Header />
-      </header>
+
       <main className={styles.container}>
         <LogInButton />
         <SignUpButton />

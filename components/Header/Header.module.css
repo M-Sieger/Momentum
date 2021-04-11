@@ -1,12 +1,31 @@
 .header {
+  grid-template-rows: 1fr;
   height: 50px;
-  display: block;
+  display: grid;
   background-color: black;
   color: white;
-  text-align: center;
-  font-size: 1.2em;
-  padding: 0.5em 1em;
-  font-family: var(--HeaderFont);
   border: none;
-  position: sticky;
+  grid-column: 1/3;
+  align-items: center;
+}
+
+.backArrow {
+  width: 2em;
+  grid-column: 1;
+  grid-row: 1/1;
+  margin-left: 5px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 50px;
+}
+.headline {
+  margin: 0;
+  text-align: center;
+  font-family: var(--HeaderFont);
+  font-size: 1em;
+  grid-row: 1/1;
+  grid-column: 1/3;
 }

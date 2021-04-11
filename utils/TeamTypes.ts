@@ -7,4 +7,5 @@ export type Team = {
   intPoints: number;
   intGoalsFor: number;
   intGoalsAgainst: number;
+  href: string;
 };

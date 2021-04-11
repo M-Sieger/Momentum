@@ -2,11 +2,11 @@
   display: inline-block;
   color: white;
   border-radius: 35px;
-  background: rgb(129, 104, 104);
+  background-color: transparent;
   font-size: 1.2em;
   padding: 0.5em 1em;
   text-align: center;
-  border: white 10px solid;
+  border: none;
 }
 
 .schalkematch {
