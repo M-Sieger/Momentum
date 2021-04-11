@@ -3,7 +3,7 @@ import React from "react";
 import useSWR from "swr";
 import TeamList from "../components/TeamList/teamList";
 import type { Team } from "../utils/TeamTypes";
-import styles from "../../styles/Home.module.css";
+import styles from "../styles/Home.module.css";
 
 export type TeamListPageProps = { teams: Team[] };
 
