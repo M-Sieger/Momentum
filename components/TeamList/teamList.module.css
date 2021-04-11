@@ -1,3 +1,15 @@
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 @keyframes bounce {
   0%,
   20%,
@@ -28,6 +40,8 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   margin-bottom: 5em;
+  animation-duration: 1s;
+  animation-name: slidein;
 }
 
 .teamListBadge {

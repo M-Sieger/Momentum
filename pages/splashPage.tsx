@@ -15,8 +15,8 @@ export default function SplashPage() {
       </header>
       <main className={styles.mainSplash}>
         <ButtonLink href="/teams">Bundesliga Teams</ButtonLink>
-        <ButtonLink href="#">Spieltag</ButtonLink>
-        <ButtonLink href="#">Beschreibung</ButtonLink>
+        <ButtonLink href="/matchday">Spieltag</ButtonLink>
+        <ButtonLink href="/tabelle">Tabelle</ButtonLink>
       </main>
     </div>
   );
