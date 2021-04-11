@@ -7,7 +7,7 @@ export default function MatchDay() {
   return (
     <div className={styles.matchdayContainer}>
       <Head>
-        <title>Spieltag</title>
+        <title>Nächstes Spiel</title>
         <link rel="icon" href="/Logo_Bundesliga.svg.png" />
       </Head>
 
@@ -22,7 +22,7 @@ export default function MatchDay() {
             src="https://www.thesportsdb.com/images/media/team/badge/whja8n1580141802.png"
           />
           <br />
-          <div className={styles.blink}>Geh mit Dortmund !</div>
+
           <img
             className={styles.schalkematch}
             src="https://www.thesportsdb.com/images/media/team/badge/qqutyp1473453400.png"

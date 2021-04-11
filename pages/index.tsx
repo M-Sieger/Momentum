@@ -17,7 +17,11 @@ export default function SplashPage() {
       </Head>
 
       <main className={styles.main}>
-        <Logo src="/bundesliga-1-logo-png-transparent.png" />
+        <p className={styles.logoheadline}>Momentum</p>
+        <div className={styles.logo}>
+          {" "}
+          <Logo src="/bundesliga-1-logo-png-transparent.png" />
+        </div>
       </main>
     </div>
   );

@@ -1,24 +1,53 @@
 .matchday {
-  display: inline-block;
-  color: white;
+  min-width: auto;
   border-radius: 35px;
   font-size: 1.2em;
   padding: 0.5em 1em;
   text-align: center;
+  min-height: 100vh;
+  align-items: center;
 }
 
 .schalkematch {
   height: 7em;
+  margin-top: 5em;
+  animation: fadein 2s;
+  margin-bottom: 4em;
 }
 .bvbmatch {
   height: 7em;
+  margin-top: 2em;
+  animation: fadein 2s;
 }
+
 .matchdayContainer {
-  display: inline-block;
   background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 1) 0%,
     rgba(0, 111, 3, 1) 50%,
     rgba(0, 0, 0, 1) 100%
   );
+}
+.blink {
+  animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.nextmatch {
+  color: white;
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

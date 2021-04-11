@@ -16,8 +16,40 @@
 .main {
   padding: 5rem 0;
   flex: 1;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.logoheadline {
+  font-size: 3em;
+  color: white;
+  margin-bottom: 100px;
+}
+
+.logo {
+  padding-bottom: 100px;
+  margin-left: 4em;
+}
+
+.beschreibung {
+  color: white;
+  background: black;
+  margin-top: 10em;
+  margin-left: 10em;
+  margin-right: 10em;
+  padding: 5em 5em 5em 5em;
+  border-radius: 10px;
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.legende {
+  color: white;
 }

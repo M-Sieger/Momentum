@@ -14,7 +14,7 @@ export const Multiple = () => (
   <div style={{ display: "grid", gridRowGap: "0.5em" }}>
     <ButtonLink href="#">Start</ButtonLink>
     <ButtonLink href="#">Tabelle</ButtonLink>
-    <ButtonLink href="#">Spieltag</ButtonLink>
+    <ButtonLink href="/matchday">Spieltag</ButtonLink>
     <ButtonLink href="#">Momentum</ButtonLink>
     <ButtonLink href="#">Beschreibung</ButtonLink>
   </div>

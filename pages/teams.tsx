@@ -5,6 +5,7 @@ import TeamList from "../components/TeamList/teamList";
 import type { Team } from "../utils/TeamTypes";
 import styles from "../styles/Home.module.css";
 import LoadingSpinner from "../components/LoadingSpinner/loadingSpinner ";
+import Header from "../components/Header/Header";
 
 export type TeamListPageProps = { teams: Team };
 
@@ -24,8 +25,9 @@ export default function TeamListPage() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Momentum</title>
+        <title>Teams</title>
       </Head>
+
       <main>
         <TeamList teams={teams} />
       </main>

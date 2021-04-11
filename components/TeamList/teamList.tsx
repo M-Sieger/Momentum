@@ -12,23 +12,22 @@ export type TeamListProps = {
 const TeamList = ({ teams }: TeamListProps) => {
   return (
     <>
-      <span className={styles.ListHeader}>
-        <Header />
-      </span>
-
-      <div className={styles.teamList}>
-        {teams.map((team) => (
-          <Link href={`/TeamDetail/${team.strTeam}`} key={team.strTeam}>
-            <div className={styles.listContainer} key={team.strTeam}>
-              <img
-                className={styles.teamListBadge}
-                src={team.strTeamBadge}
-                alt={team.strTeam}
-              />
-            </div>
-          </Link>
-        ))}
-      </div>
+      <main>
+        <h1 className={styles.choose}>Wähle dein Team</h1>
+        <div className={styles.teamList}>
+          {teams.map((team) => (
+            <Link href={`/TeamDetail/${team.strTeam}`} key={team.strTeam}>
+              <div className={styles.listContainer} key={team.strTeam}>
+                <img
+                  className={styles.teamListBadge}
+                  src={team.strTeamBadge}
+                  alt={team.strTeam}
+                />
+              </div>
+            </Link>
+          ))}
+        </div>
+      </main>
     </>
   );
 };
